@@ -1,0 +1,64 @@
+.winner {
+  width: 80vw;
+  min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+}
+
+.winner:nth-child(even) {
+  background-color: #e7e5e5;
+}
+
+.winner h5 {
+  font-size: 3rem;
+}
+
+.winner .title {
+  width: 25vw;
+}
+
+.winner h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.7rem;
+}
+
+.winner h2 span {
+  font-size: 1rem;
+}
+
+@media all and (max-width: 650px) {
+  .winner h5 {
+    font-size: 2rem;
+  }
+  .winner .title h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .winner .title h4 {
+    font-size: .7rem;
+  }
+  .winner h2 {
+    font-size: 2rem;
+  }
+  .winner h2 span {
+    font-size: .7rem;
+  }
+}
+/*# sourceMappingURL=winner.css.map */

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.results-page{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(#F6D365,#FDA085);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-bar{
+        width: 100vw;
+        height: 40vh;
+        background-image: linear-gradient(#B74174,#E35C76);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .navbar{
+            background-color: rgba(128, 128, 128, 0.315);
+            width: 100vw;
+            height: 7vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1vh;
+            
+        }
+        p{
+            color: white;
+            position: absolute;
+            top: 10vh;
+            left: 2vw;
+            background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            padding:.5rem 1rem;
+            border-radius: 1rem;
+        }
+        h2{
+            margin-top: 8vh;
+            font-size: 2rem;
+        }
+    }
+
+    .winners{
+        width: 80vw;
+        height: 70vh;
+        background-color: white;
+        transform: translateY(-12vh);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+
+
+
+//scrollbar
+.winners::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+ .winners::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.795);
+  }
+   
+  .winners::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  @media all and (max-width:650px){
+      .results-page .top-bar h2{
+          font-size: 1.5rem;
+      }
+    
+  }

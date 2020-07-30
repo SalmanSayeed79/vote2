@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-out {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#04CE9B), to(#64E408));
+  background-image: linear-gradient(#04CE9B, #64E408);
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background-color: #c4c4c4a4;
+}
+
+.navbar h1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 2vw;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.main-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.main-part .texts h2 {
+  color: #EB1E80;
+  font-size: 2.5rem;
+  margin-bottom: 1vh;
+}
+
+.main-part .texts .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-part .texts .buttons h3 {
+  padding: .5rem 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
+  background-image: linear-gradient(#EB1E80, #F42A5A);
+  color: white;
+  margin-top: 3vh;
+  margin-right: 2vw;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.main-part .texts .buttons h3:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
+  background-image: linear-gradient(#FFB347, #FFCC33);
+}
+
+.main-part img {
+  width: 35vw;
+}
+
+@media all and (max-width: 650px) {
+  .main-part img {
+    margin-top: 5vh;
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=homeOut.css.map */

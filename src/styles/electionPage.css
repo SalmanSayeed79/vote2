@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.election-page {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
+  background-image: linear-gradient(#00B4DB, #0083B0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.election-page .top-bar {
+  width: 100vw;
+  height: 40vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#C0A4FA), to(#D9CAF8));
+  background-image: linear-gradient(#C0A4FA, #D9CAF8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.election-page .top-bar .navbar {
+  background-color: rgba(128, 128, 128, 0.315);
+  width: 100vw;
+  height: 7vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1vh;
+}
+
+.election-page .top-bar p:first-child {
+  color: white;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
+  background-image: linear-gradient(#EB1E80, #F42A5A);
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  top: 10vh;
+  left: 2vw;
+}
+
+.election-page .top-bar p:first-child:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
+  background-image: linear-gradient(#FFB347, #FFCC33);
+}
+
+.election-page .top-bar h6 {
+  color: white;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
+  background-image: linear-gradient(#EB1E80, #F42A5A);
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  top: 10vh;
+  right: 2vw;
+}
+
+.election-page .top-bar h6:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
+  background-image: linear-gradient(#FFB347, #FFCC33);
+}
+
+.election-page .top-bar h2 {
+  margin-top: 10vh;
+  font-size: 1.6rem;
+}
+
+.election-page .candidates {
+  width: 80vw;
+  height: 70vh;
+  background-color: white;
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.election-page #new_candidate {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
+  background-image: linear-gradient(#EB1E80, #F42A5A);
+  font-size: 1.8rem;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  border: 0;
+  color: white;
+  -webkit-transform: translateY(-8vh);
+          transform: translateY(-8vh);
+  margin-bottom: 5vh;
+  cursor: pointer;
+}
+
+.election-page #new_candidate:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
+  background-image: linear-gradient(#FFB347, #FFCC33);
+}
+
+.candidates::-webkit-scrollbar {
+  width: 5px;
+}
+
+.candidates::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.795);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.795);
+}
+
+.candidates::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+/*# sourceMappingURL=electionPage.css.map */

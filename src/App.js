@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import HomeOut from './home-out';
+import HomeOn from './home-on';
+import ElectionPage from './election-page';
+import ResultsPage from './results-page'
+
+import {db,auth} from './firebase/firestore'
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+      <Switch>
+      <Route path='/' exact component={HomeOut}/>
+      <Route path='/home' exact component={HomeOn}/>
+      <Route path='/home/:id'  component={ElectionPage}/>
+      <Route path='/results/:id' component={ResultsPage}/>
+      </Switch>
+   </BrowserRouter>
   );
 }
 

@@ -1,0 +1,53 @@
+.candidate{
+    width: 80vw;
+    min-height: 8vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding:1rem 0;
+    
+    &:nth-child(even){
+        background-color: rgb(231, 229, 229);
+    }
+
+
+    .title{
+        width: 25vw;
+    }
+    p{
+        width: 40vw;
+    }
+    h2{
+        background-image:linear-gradient(#EB1E80,#F42A5A) ;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            background-image:linear-gradient(#FFB347,#FFCC33) ;
+        }
+    }
+}
+
+@media all and (max-width:650px){
+    .candidate{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title{
+            width: 70vw;
+            h3{
+                font-size: 1.7rem;
+            }
+            margin-bottom: 2vh;
+        }
+
+        p{
+            width: 70vw;
+            margin-bottom: 2vh;
+        }
+    }
+
+}

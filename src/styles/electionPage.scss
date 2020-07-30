@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.election-page{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(#00B4DB,#0083B0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-bar{
+        width: 100vw;
+        height: 40vh;
+        background-image: linear-gradient(#C0A4FA,#D9CAF8);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .navbar{
+            background-color: rgba(128, 128, 128, 0.315);
+            width: 100vw;
+            height: 7vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1vh;
+            
+        }
+        p:first-child{
+            color: white;
+            position: absolute; 
+            background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            padding:.5rem 1rem;
+            border-radius: 1rem;
+            top: 10vh;
+            left: 2vw;
+            &:hover{
+                background-image:linear-gradient(#FFB347,#FFCC33) ;
+            }
+        }
+        h6{
+            color: white;
+            position: absolute; 
+            background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            font-size: 1rem;
+            padding:.5rem 1rem;
+            border-radius: 1rem;
+            top: 10vh;
+            right: 2vw;
+            &:hover{
+                background-image:linear-gradient(#FFB347,#FFCC33) ;
+            }
+        }
+        h2{
+            margin-top: 10vh;
+            font-size: 1.6rem;
+        }
+    }
+
+    .candidates{
+        width: 80vw;
+        height: 70vh;
+        background-color: white;
+        transform: translateY(-10vh);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #new_candidate{
+        background-image:linear-gradient(#EB1E80,#F42A5A) ;
+        font-size: 1.8rem;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        border: 0;
+        color: white;
+        transform: translateY(-8vh);
+        margin-bottom: 5vh;
+        cursor: pointer;
+        &:hover{
+            background-image:linear-gradient(#FFB347,#FFCC33) ;
+    }}
+}
+
+
+
+
+
+
+
+//scrollbar
+.candidates::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+ .candidates::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.795);
+  }
+   
+  .candidates::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }

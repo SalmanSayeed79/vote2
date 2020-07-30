@@ -1,0 +1,103 @@
+.cards{
+    
+    width: 20vw;
+    height: 50vh;
+    background-color: white;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 5vw;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(#35C8CB,#7B2DD6);
+    box-shadow: 5px 5px 5px grey;
+    //border-radius: 2rem;
+    transition: transform .3s ease-in;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-5vh) translateX(-1vw);
+        
+    }
+    
+
+    p{
+        background-color: red;
+        position:absolute;
+        top: 10px;
+        right: 20px;
+
+        padding: 0 .5rem;
+        border-radius: 1rem;
+        color: white;
+    }
+    h2{
+        margin-top: -4vh;
+        padding: 1rem 3rem;
+        background-image:linear-gradient(#EB1E80,#F42A5A) ;
+        background-color: white;
+        border-radius: 1rem;
+        color: white;
+
+        cursor: pointer;
+      
+    }
+    .creation{
+        margin-top: -4vh;
+        
+    }
+    .bottom-bar{
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 12vh;
+        width: 20vw;
+        border-top: 1px solid black;
+        
+        //border-bottom-left-radius: 2rem;
+        //border-bottom-right-radius: 2rem;
+        h3{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 3rem;
+            color: #F18781;
+
+            span{
+                font-size: 1rem;
+                color: grey;
+            }
+        }
+    }
+
+}
+@media all and (max-width:1000px){
+    .cards{
+        width: 35vw;
+        .bottom-bar{
+            width: 35vw;
+        }
+    }
+    .cards h2{
+        padding: 1rem 1rem;
+    }
+ 
+}
+@media all and (max-width:650px){
+    .cards{
+        width: 80vw;
+        .bottom-bar{
+            width: 80vw;
+            h3{
+                margin-right: 2vw;
+            }
+        }
+    }
+    .cards h2{
+        padding: 1rem 1rem;
+    }
+  
+}

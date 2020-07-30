@@ -1,0 +1,90 @@
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.527);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    display: none;
+
+    .modal{
+        width: 60vw;
+        height: 50vh;
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 1rem;
+
+        p{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: .5rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 50%;
+            &:hover{
+                background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                color: white;
+            }
+        }
+    
+        
+
+        h2{
+            background-color: #FF5E62;
+            color: white;
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 2vh;
+        }
+
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+
+            input{
+                width: 40vw;
+                height: 5vh;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid black;
+            }
+            textarea{
+                width: 40vw;
+                outline: none;
+                border: none;
+                height: 10vw;
+                border-bottom: 2px solid black;
+            }
+            button{
+                margin-top: 2vh;
+                background-image:linear-gradient(#FF9966,#FF5E62) ;
+                min-width: 10vw;
+                height: 4vh;
+                border-radius: 1rem;
+                border: 0;
+                cursor: pointer;
+                &:hover{
+                    background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                }
+            }
+        }
+        
+    }
+}
+
+.show-modal{
+    display: flex;
+}

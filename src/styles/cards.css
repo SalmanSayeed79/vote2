@@ -1,0 +1,122 @@
+.cards {
+  width: 20vw;
+  height: 50vh;
+  background-color: white;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#35C8CB), to(#7B2DD6));
+  background-image: linear-gradient(#35C8CB, #7B2DD6);
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+  cursor: pointer;
+}
+
+.cards:hover {
+  -webkit-transform: translateY(-5vh) translateX(-1vw);
+          transform: translateY(-5vh) translateX(-1vw);
+}
+
+.cards p {
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 0 .5rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.cards h2 {
+  margin-top: -4vh;
+  padding: 1rem 3rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
+  background-image: linear-gradient(#EB1E80, #F42A5A);
+  background-color: white;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cards .creation {
+  margin-top: -4vh;
+}
+
+.cards .bottom-bar {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12vh;
+  width: 20vw;
+  border-top: 1px solid black;
+}
+
+.cards .bottom-bar h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+  color: #F18781;
+}
+
+.cards .bottom-bar h3 span {
+  font-size: 1rem;
+  color: grey;
+}
+
+@media all and (max-width: 1000px) {
+  .cards {
+    width: 35vw;
+  }
+  .cards .bottom-bar {
+    width: 35vw;
+  }
+  .cards h2 {
+    padding: 1rem 1rem;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .cards {
+    width: 80vw;
+  }
+  .cards .bottom-bar {
+    width: 80vw;
+  }
+  .cards .bottom-bar h3 {
+    margin-right: 2vw;
+  }
+  .cards h2 {
+    padding: 1rem 1rem;
+  }
+}
+/*# sourceMappingURL=cards.css.map */

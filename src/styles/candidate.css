@@ -1,0 +1,67 @@
+.candidate {
+  width: 80vw;
+  min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+}
+
+.candidate:nth-child(even) {
+  background-color: #e7e5e5;
+}
+
+.candidate .title {
+  width: 25vw;
+}
+
+.candidate p {
+  width: 40vw;
+}
+
+.candidate h2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
+  background-image: linear-gradient(#EB1E80, #F42A5A);
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.candidate h2:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
+  background-image: linear-gradient(#FFB347, #FFCC33);
+}
+
+@media all and (max-width: 650px) {
+  .candidate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .candidate .title {
+    width: 70vw;
+    margin-bottom: 2vh;
+  }
+  .candidate .title h3 {
+    font-size: 1.7rem;
+  }
+  .candidate p {
+    width: 70vw;
+    margin-bottom: 2vh;
+  }
+}
+/*# sourceMappingURL=candidate.css.map */
