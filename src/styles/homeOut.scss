@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +24,9 @@
         //color: whitesmoke;
         margin-left: 2vw;
         font-size: 3rem;
+        letter-spacing: 2px;
         cursor: pointer;
+        font-family: 'Bangers', cursive;
     }
 
         
@@ -37,20 +41,30 @@
 
     .texts{
         h2{
-            color: #EB1E80;
+            color: #F6594F;
             font-size: 2.5rem;
             margin-bottom: 1vh;
+            animation: leftCome 1s linear forwards;
+        }
+        p{
+            transform: translateX(-100vw);
+            animation: rightCome 1s 1s linear forwards;
         }
         .buttons{
             display: flex;
 
             h3{
                 padding: .5rem 1rem;
-                background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                //background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                background-color: #F6594F;
                 color: white;;
                 margin-top: 3vh;
                 margin-right: 2vw;
                 border-radius: 1rem;
+
+                opacity: 0;
+                animation: visible 1s 2s ease-in forwards;
+                
                 
                 cursor: pointer;
                 &:hover{
@@ -69,5 +83,35 @@
     .main-part img{
         margin-top: 5vh;
         width: 70vw;
+    }
+ 
+}
+
+@keyframes leftCome{
+    from{
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rightCome{
+    from{
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes visible{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }

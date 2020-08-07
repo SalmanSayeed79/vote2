@@ -1,5 +1,5 @@
-//@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +8,8 @@
 .home-on{
     width: 100vw;
     min-height: 100vh;
-    background-image: linear-gradient(#CE9FFC,#7367F0);
+    //background-image: linear-gradient(#CE9FFC,#7367F0);
+    background-color: #fdfdfd;
 }
 .navbar{
     display: flex;
@@ -34,20 +35,22 @@
         display: flex;
     }
     #user-name{
-        color: #FFCC33;
+        color: #cabbe9;
         cursor: pointer;
         &:hover{
-            border-bottom: 2px solid #FFCC33;
+            border-bottom: 2px solid #cabbe9;
         }
     }
     #log-out-button{
         padding: 0.5rem 2rem;
-        background-image:linear-gradient(#FF9966,#FF5E62) ;
+        //background-image:linear-gradient(#FF9966,#FF5E62) ;
+        background-color: #cabbe9;
         color: white;
         border-radius: 1rem;
         cursor: pointer;
         &:hover{
-            background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            //background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            background-color: #ffcef3;
         }
     }
         
@@ -61,12 +64,14 @@
     align-items: center;
     h3{
         text-align: center;
-        background-image:linear-gradient(#FF9966,#FF5E62) ;
+        //background-image:linear-gradient(#FF9966,#FF5E62) ;
+        background-color: #cabbe9;
         padding: 2rem;
         border-radius: 1rem;
         cursor: pointer;
         &:hover{
-            background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            //background-image:linear-gradient(#EB1E80,#F42A5A) ;
+            background-color: #ffcef3;
         }
     }
 }
@@ -100,7 +105,8 @@
         }
         #log-out-button{
             padding: 0.2rem .5rem;
-            background-color: #F18781;
+            
+            background-color: #F6594F;
             &:hover{
                 background-color: #88FFA2;
             }

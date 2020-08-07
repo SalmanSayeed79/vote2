@@ -66,6 +66,9 @@ export default function ElectionPage(matchedData) {
             })
 
             hideModal()
+            form.name.value=''
+            form.dept.value=''
+            form.details.value=''
             getCandidates()
             
         }
@@ -100,7 +103,7 @@ export default function ElectionPage(matchedData) {
                 </div>
                 <Link to='/home'><p> Go back </p></Link>
                 <Link to={`/results/${document_id}`}><h6> See Results</h6></Link>
-                <h2>Best footballer in the world</h2>
+                <h2>{document_id}</h2>
                 
             </div>
             <div className="candidates" >

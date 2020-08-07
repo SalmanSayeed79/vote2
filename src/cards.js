@@ -17,7 +17,7 @@ export default function Cards(props) {
             <div>{props.data.active? <p>Active</p>:<p>Completed</p> }</div>
             <h2 onClick={goToElection}>{props.data.name}</h2>
             <div className="creation">
-                <h4>Created by: Salman Sayeed</h4>
+                <h4>Created by: User</h4>
                 <h4>Created on: 17-6-2020</h4>
             </div>
 

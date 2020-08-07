@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
 .modal-container{
     width: 100vw;
     height: 100vh;
@@ -29,9 +36,10 @@
             padding: .5rem;
             font-size: 1.2rem;
             cursor: pointer;
-            border-radius: 50%;
+            border-radius:5rem;
             &:hover{
-                background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                //background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                background-color: #ffcef3;
                 color: white;
             }
         }
@@ -39,7 +47,7 @@
         
 
         h2{
-            background-color: #FF5E62;
+            background-color: #ffcef3;
             color: white;
             padding: .5rem 1rem;
             border-radius: 1rem;
@@ -70,14 +78,16 @@
             }
             button{
                 margin-top: 2vh;
-                background-image:linear-gradient(#FF9966,#FF5E62) ;
+                //background-image:linear-gradient(#FF9966,#FF5E62) ;
+                background-color: #cabbe9;
                 min-width: 10vw;
                 height: 4vh;
                 border-radius: 1rem;
                 border: 0;
                 cursor: pointer;
                 &:hover{
-                    background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                    //background-image:linear-gradient(#EB1E80,#F42A5A) ;
+                    background-color:#ffcef3 ;
                 }
             }
         }

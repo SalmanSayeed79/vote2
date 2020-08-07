@@ -8,8 +8,7 @@
 .election-page {
   width: 100vw;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
-  background-image: linear-gradient(#00B4DB, #0083B0);
+  background-color: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,8 +24,7 @@
 .election-page .top-bar {
   width: 100vw;
   height: 40vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#C0A4FA), to(#D9CAF8));
-  background-image: linear-gradient(#C0A4FA, #D9CAF8);
+  background-color: #a1eafb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,8 +58,7 @@
 .election-page .top-bar p:first-child {
   color: white;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
-  background-image: linear-gradient(#EB1E80, #F42A5A);
+  background-color: #cabbe9;
   padding: .5rem 1rem;
   border-radius: 1rem;
   top: 10vh;
@@ -69,15 +66,13 @@
 }
 
 .election-page .top-bar p:first-child:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
-  background-image: linear-gradient(#FFB347, #FFCC33);
+  background-color: #ffcef3;
 }
 
 .election-page .top-bar h6 {
   color: white;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
-  background-image: linear-gradient(#EB1E80, #F42A5A);
+  background-color: #cabbe9;
   font-size: 1rem;
   padding: .5rem 1rem;
   border-radius: 1rem;
@@ -86,8 +81,7 @@
 }
 
 .election-page .top-bar h6:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
-  background-image: linear-gradient(#FFB347, #FFCC33);
+  background-color: #ffcef3;
 }
 
 .election-page .top-bar h2 {
@@ -106,8 +100,7 @@
 }
 
 .election-page #new_candidate {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
-  background-image: linear-gradient(#EB1E80, #F42A5A);
+  background-color: #cabbe9;
   font-size: 1.8rem;
   padding: .5rem 1rem;
   border-radius: 1rem;
@@ -120,8 +113,7 @@
 }
 
 .election-page #new_candidate:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB347), to(#FFCC33));
-  background-image: linear-gradient(#FFB347, #FFCC33);
+  background-color: #ffcef3;
 }
 
 .candidates::-webkit-scrollbar {

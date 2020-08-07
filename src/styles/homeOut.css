@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +33,9 @@
           flex: 2;
   margin-left: 2vw;
   font-size: 3rem;
+  letter-spacing: 2px;
   cursor: pointer;
+  font-family: 'Bangers', cursive;
 }
 
 .main-part {
@@ -50,9 +54,18 @@
 }
 
 .main-part .texts h2 {
-  color: #EB1E80;
+  color: #F6594F;
   font-size: 2.5rem;
   margin-bottom: 1vh;
+  -webkit-animation: leftCome 1s linear forwards;
+          animation: leftCome 1s linear forwards;
+}
+
+.main-part .texts p {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-animation: rightCome 1s 1s linear forwards;
+          animation: rightCome 1s 1s linear forwards;
 }
 
 .main-part .texts .buttons {
@@ -63,12 +76,14 @@
 
 .main-part .texts .buttons h3 {
   padding: .5rem 1rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#EB1E80), to(#F42A5A));
-  background-image: linear-gradient(#EB1E80, #F42A5A);
+  background-color: #F6594F;
   color: white;
   margin-top: 3vh;
   margin-right: 2vw;
   border-radius: 1rem;
+  opacity: 0;
+  -webkit-animation: visible 1s 2s ease-in forwards;
+          animation: visible 1s 2s ease-in forwards;
   cursor: pointer;
 }
 
@@ -85,6 +100,76 @@
   .main-part img {
     margin-top: 5vh;
     width: 70vw;
+  }
+}
+
+@-webkit-keyframes leftCome {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes leftCome {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes rightCome {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes rightCome {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=homeOut.css.map */

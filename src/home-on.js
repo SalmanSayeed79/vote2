@@ -108,9 +108,6 @@ export default function HomeOn() {
                     <h2>Create New Election</h2>
                     <form className="new-can-modal" onSubmit={e=>addData(e)}>
                         <input type="text" name="election_name" placeholder="Election Name"/>
-                        <input type="text" name="candidate_name" placeholder="First Candidate's Name"/>
-                        <input type="text" name="candidate_dept" placeholder="First Candidate' Department"/>
-                        <textarea type="textbox" name="candidate_details" placeholder="First Candidate' Details"/>
                         <button>Submit</button>
                     </form>
                     <p onClick={hideNewElectionModal}>x</p>
@@ -123,7 +120,7 @@ export default function HomeOn() {
                 <h1>Vote EM UP</h1>
                 <div className="others">
                     <h2 id="log-out-button" onClick={logUserOut}>Log Out</h2>
-                    <h2 >Welcome, <span id="user-name">Salman Sayeed</span></h2>
+                    <h2 >Welcome, <span id="user-name">User</span></h2>
                 </div>
             </div>
             <div className="new-election" onClick={showNewElectionModal}>
@@ -134,7 +131,7 @@ export default function HomeOn() {
             <div className="card-container">
         
             {data.map(a=>(  
-                <Link to={`/home/${a.name}`}><Cards key={a.name} data={a}/></Link>
+                <Link to={`/home/${a.name}`} style={{textDecoration:'none' }}><Cards  key={a.name} data={a}/></Link>
                 ))}
                 
               
